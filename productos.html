@@ -9,7 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="bodyproduct">
     
   <nav class="navbar navbar-expand-lg" style="background-color: #80a5d6;">
 
@@ -37,73 +38,162 @@
     </div>
 
   </nav>
-
- <main class="mainProduct">
-
-<div class="row"> 
-
-  <div class="col-xl-12 col-md-12 col-sm-12">
-
-    <div class="orderby">
-      <h3>Ordenar</h3>
-      <h4>Alfabeticamente</h4>
-      <h4>Populares</h4>
-      <h4>Precio</h4>
-      <!-- Hacer funcionar con order y crear mas html -->
-    </div>
-
+<div class="filtros">
+  <h2>Filtrar por</h2>
+  <div class="filterList">
+    <ul>
+      <li class="boton"><a href="productos/frutas.html">Frutas</a></li>
+      <li class="boton"><a href="productos/frutas.html">Listos</a></li>
+      <li class="boton"><a href="productos/frutas.html">Carnes</a></li>
+      <li class="boton"><a href="productos/frutas.html">Almacen</a></li>
+      <li class="boton"><a href="productos/frutas.html">Verduras</a></li>
+    </ul>
   </div>
-
 </div>
-
-<div class="row">
-
-  <div class=" 6 col-xl-3 col-md-4 col-sm-6 col-xs-6">
-
-    <div class="card product" style="width: 13rem;">
-      <img src="img/frutillas.jpg" class="card-img-top" alt="imgfrutilla">
-      <div class="card-body">
-        <h4>Frutillas</h4>
-        <p class="card-text">$900</p>
+<div class="card-wrap">
+  <article class="card">
+    <header class="header-card">
+      <img src="img/salmon.jpg" alt="salmon">
+    </header>
+    <footer class="footer-card">
+      <div class="categoria-card">
+        <span class="carnes">Carnes</span>
       </div>
-    </div>
-
-  </div>
-
-  <div class=" 6 col-xl-3 col-md-4 col-sm-6 col-xs-6">
-
-    <div class="card product" style="width: 13rem;">
-      <img src="img/arandanos.jpg" class="card-img-top" alt="imgArndanos">
-      <div class="card-body">
-        <h4>Arandanos</h4>
-        <p class="card-text">$800</p>
+      <div class="texto-card">
+        <h3 class="frutas">Frutillas</h3>
+        <p>Deliciosas frutillas</p>
       </div>
-    </div>
-
-  </div>
-
-  <div class="col-xl-3 col-md-4 col-sm-6 col-xs-6">  
-    <div class="card product" style="width: 13rem;">
-      <img src="img/pizza.jpg" class="card-img-top" alt="imgPizza">
-      <div class="card-body">
-        <h4>Pizza</h4>
-        <p class="card-text">$1600</p>
+      <div class="perfil-card">
+        <div class="img-perfil-card">
+          <img src="img/proveedor1.jpg" alt="">
+        </div>
+        <div class="text-perfil-card">
+          <span>Proveedor</span>
+        </div>
       </div>
-    </div>
 
-  </div>
+    </footer>
+  </article>
 
-  <div class="col-xl-3 col-md-4 col-sm-6 col-xs-6">
-    <div class="card product" style="width: 13rem;">
-      <img src="img/salmon.jpg" class="card-img-top" alt="imgSalmon">
-      <div class="card-body">
-        <h4>Salmon</h4>
-        <p class="card-text">$3000 k/g</p>
+  <article class="card">
+    <header class="header-card">
+      <img src="img/frutillas.jpg" alt="frutillas">
+    </header>
+    <footer class="footer-card">
+      <div class="categoria-card">
+        <span class="fruta">Frutas</span>
       </div>
-    </div>
+      <div class="texto-card">
+        <h3>Frutillas</h3>
+        <p>Deliciosas frutillas</p>
+        <p>$440</p>
+      </div>
+      <div class="perfil-card">
+        <div class="img-perfil-card">
+          <img src="img/proveedor1.jpg" alt="">
+        </div>
+        <div class="text-perfil-card">
+          <span>Proveedor</span>
+        </div>
+      </div>
 
-  </div>
+    </footer>
+  </article>
 
+  <article class="card">
+    <header class="header-card">
+      <img src="img/pizza.jpg" alt="frutillas">
+    </header>
+    <footer class="footer-card">
+      <div class="categoria-card">
+        <span class="listos">Listos</span>
+      </div>
+      <div class="texto-card">
+        <h3>Pizza Muzzarella</h3>
+        <p>Deliciosas frutillas</p>
+      </div>
+      <div class="perfil-card">
+        <div class="img-perfil-card">
+          <img src="img/proveedor1.jpg" alt="">
+        </div>
+        <div class="text-perfil-card">
+          <span>Proveedor</span>
+        </div>
+      </div>      
+    </footer>
+  </article>
+
+  <article class="card">
+    <header class="header-card">
+      <img src="img/frutillas.jpg" alt="frutillas">
+    </header>
+    <footer class="footer-card">
+      <div class="categoria-card">
+        <span>Fruta</span>
+      </div>
+      <div class="texto-card">
+        <h3 class="frutas">Frutillas</h3>
+        <p>Deliciosas frutillas</p>
+      </div>
+      <div class="perfil-card">
+        <div class="img-perfil-card">
+          <img src="img/proveedor1.jpg" alt="">
+        </div>
+        <div class="text-perfil-card">
+          <span>Proveedor</span>
+        </div>
+      </div>
+
+    </footer>
+  </article>
+
+  <article class="card">
+    <header class="header-card">
+      <img src="img/frutillas.jpg" alt="frutillas">
+    </header>
+    <footer class="footer-card">
+      <div class="categoria-card">
+        <span class="fruta">Fruta</span>
+      </div>
+      <div class="texto-card">
+        <h3>Frutillas</h3>
+        <p>Deliciosas frutillas</p>
+        <p>$440</p>
+      </div>
+      <div class="perfil-card">
+        <div class="img-perfil-card">
+          <img src="img/proveedor1.jpg" alt="">
+        </div>
+        <div class="text-perfil-card">
+          <span>Proveedor</span>
+        </div>
+      </div>
+
+    </footer>
+
+  </article>
+
+  <article class="card">
+    <header class="header-card">
+      <img src="img/pizza.jpg" alt="frutillas">
+    </header>
+    <footer class="footer-card">
+      <div class="categoria-card">
+        <span class="listos">Listos</span>
+      </div>
+      <div class="texto-card">
+        <h3>Pizza Muzzarella</h3>
+        <p>Deliciosas frutillas</p>
+      </div>
+      <div class="perfil-card">
+        <div class="img-perfil-card">
+          <img src="img/proveedor1.jpg" alt="">
+        </div>
+        <div class="text-perfil-card">
+          <span>Proveedor</span>
+        </div>
+      </div>
+</div>
 
 
 
@@ -115,8 +205,7 @@
         </a>
     </div>
 
-  <footer>
-
+  <footer class="footer">
     <div class="footerContent">
         <h3>L&M Congelados</h3>
         <p>L&M Congelados es un emprendimiento familiar con una sola mision, satisfacer las necesidades de las familias Rio4teses (?</p>

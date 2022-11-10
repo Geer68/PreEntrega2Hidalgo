@@ -1,233 +1,304 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
-   body {
-    /*font-family: $font-mktg;  AVERIGUAR*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   }
-   a {
-    text-decoration: none;
-   }
-   li {
-    list-style: none;
-   }
-
-
-/* FOOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
-footer {
-    /* position: absolute; */
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #111;
-    height: auto;
-    width: 100%;
-    padding-top: 40px;
-    color: #fff;
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
 }
 
-.footerContent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 .footerContent h3 {
-    font-size: 2.1rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    line-height: 3rem;
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
 }
 .footerContent p {
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 30px;
-    font-size: 15px;
-    color: #cacdd2;
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 30px;
+  font-size: 15px;
+  color: #cacdd2;
 }
-.footer-bottom{
-    background: #000;
-    width: 100%;
-    padding: 20px;
-    padding-bottom: 60px;
-    text-align: center;
 
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 60px;
+  text-align: center;
 }
-.footer-bottom p{
-    float: left;
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 1.5px;
+  text-transform: capitalize;
 }
-.footer-bottom p a{
-  color:#44bae8;
+.footer-bottom p a {
+  color: #44bae8;
   font-size: 16px;
-  text-decoration: none;
+  text-transform: capitalize;
 }
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
 }
-.footer-menu{
-  float: right;
 
+.footer-menu {
+  float: right;
 }
-.footer-menu ul{
+.footer-menu ul {
   display: flex;
 }
-.footer-menu ul li{
-padding-right: 10px;
-display: block;
+.footer-menu ul li {
+  padding-right: 10px;
+  display: block;
 }
-.footer-menu ul li a{
+.footer-menu ul li a {
   color: #cfd2d6;
   text-decoration: none;
 }
-.footer-menu ul li a:hover{
+.footer-menu ul li a:hover {
   color: #27bcda;
 }
 
+.form {
+  display: grid;
+  grid-row-gap: 5px;
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 600px;
+  padding: 25px;
+}
 
-/* BOTON FLOTANTEEEEEEEEEEEEEEEEEEEEEE */
+@media (min-width: 400px) {
+  .form {
+    grid-column-gap: 25px;
+    grid-template-areas: "label-name label-email" "field-name field-email" "label-msg  ." "field-msg  field-msg" "button     .";
+  }
+}
+.label-name {
+  grid-area: label-name;
+}
+
+.label-email {
+  grid-area: label-email;
+}
+
+.label-message {
+  grid-area: label-msg;
+}
+
+.field-name {
+  grid-area: field-name;
+  width: 100%;
+}
+
+.field-email {
+  grid-area: field-email;
+  width: 100%;
+}
+
+.field-message {
+  grid-area: field-msg;
+  width: 100%;
+}
+
+.button {
+  grid-area: button;
+}
+
+.field {
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+@media (max-width: 30px) {
+  .label-email {
+    margin-top: 20px;
+  }
+}
+.label-message {
+  margin-top: 20px;
+}
+
+.button {
+  appearance: none;
+  color: white;
+  background-color: #001745;
+  border: none;
+  font-size: 0.94rem;
+  margin-top: 20px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.bodyproduct {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.bodyproduct img {
+  max-width: 100%;
+}
+
+article.card {
+  max-width: 350px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin: 1rem;
+  box-shadow: 0 0 12px #d7d7d7;
+}
+
+.header-card img {
+  border-radius: 8px 8px 0 0;
+  max-height: 200px;
+  height: 200px;
+  width: 100%;
+}
+
+.categoria-card {
+  margin-top: 1rem;
+}
+.categoria-card span {
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+.categoria-card .fruta {
+  background-color: red;
+}
+.categoria-card .listos {
+  background-color: rgb(255, 153, 0);
+}
+.categoria-card .carnes {
+  background-color: rgb(221, 128, 144);
+}
+
+.filtros {
+  align-items: center;
+}
+.filtros .boton {
+  background-color: #575757;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.filterList ul {
+  display: flex;
+}
+.filterList li {
+  padding-right: 10px;
+  display: block;
+}
+.filterList a {
+  color: #cfd2d6;
+  text-decoration: none;
+}
+
+.card footer {
+  padding: 0 1rem;
+}
+
+.perfil-card {
+  display: flex;
+  align-items: center;
+}
+
+.img-perfil-card {
+  display: flex;
+}
+.img-perfil-card img {
+  width: 35px;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 50%;
+}
+
+.text-perfil-card {
+  display: flex;
+  flex-flow: column;
+}
+.text-perfil-card span:nth-child(1) {
+  color: #575757;
+}
+
+.card-wrap {
+  display: flex;
+  flex-flow: wrap;
+}
+
 .formulario {
-    position: fixed;
-    bottom: 30px;
-    right: 10px;
-}
-.formImg {
-    width: 60px;
-    height: 60px;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
 }
 
-/* NOSOTROSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+.formImg {
+  width: 60px;
+  height: 60px;
+}
+
 .mainNosotros {
-    background-color: #c8dbf4;
+  background-color: #c8dbf4;
 }
 .mainNosotros div {
-    justify-content: center;
+  justify-content: center;
 }
 
-
-/* PRODUCTOSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 .mainProduct {
+  justify-items: center;
+  background-color: #e6edf7;
+}
 
-    grid-template-areas:
-    "orderby orderby";
-    justify-items: center;
-    background-color: #e6edf7;
-}
 .textproduct {
-    grid-area: textproduct;
+  grid-area: textproduct;
 }
+
 .orderby {
-    display: flex;
-    background-color: rgba(248, 59, 59, 0.8);
-    align-items: center;
-    padding: 5px 0px 5px 0px;
-    grid-area: orderby;
-    width: 100%;
+  grid-area: orderby;
+  display: flex;
+  background-color: rgba(248, 59, 59, 0.8);
+  align-items: center;
+  padding: 5px 0px 5px 0px;
+  width: 100%;
 }
 .orderby h3 {
-    color: white;
-    padding: 0px 5px 0px 5px;
-    margin-right: 10px;
+  color: white;
+  padding: 0px 5px 5px 0px;
+  margin-right: 10px;
 }
 .orderby h4 {
-    color: rgb(255, 255, 255);
-    margin-left: 5px;
+  color: white;
+  margin-left: 5px;
 }
 
 .card {
-    margin-top: 10px;
+  margin-top: 10px;
 }
+
+.card-body {
+  width: auto;
+  height: auto;
+}
+
 .product:hover {
-    background-color: #c8dbf4;
+  background-color: #c8dbf4;
 }
 
-/* CONTACTTTTTTTTTTTO */
 .mainContacto {
-    background-color: #dfdfdf;
+  background-color: #dfdfdf;
 }
 
-
-/* FORMULARIOOOOOOOOOO */
-
-.form {
-    display: grid;
-    grid-row-gap: 5px;
-  }
-  
-  @media (min-width: 29.375rem) {
-    .form {
-      grid-column-gap: 25px;
-      grid-template-areas: 
-        "label-name  label-email"
-        "field-name  field-email"
-        "label-msg   ."
-        "field-msg   field-msg"
-        "button      .";
-    }
-  }
-  
-  @media (min-width: 29.375rem) {
-    .label-name {
-      grid-area: label-name;
-    }
-    .label-email {
-      grid-area: label-email;
-    }
-    .label-message {
-      grid-area: label-msg;
-    }
-    .field-name {
-      grid-area: field-name;
-    }
-    .field-email {
-      grid-area: field-email;
-    }
-    .field-message {
-      grid-area: field-msg;
-    }
-    .button {
-      grid-area: button;
-    }
-  }
-  
-  .form {
-    background-color: #eee;
-    font-family: Helvetica, Arial, sans-serif;
-    max-width: 600px;
-    padding: 25px;
-  }
-  
-  .field {
-    border: 1px solid #ccc;
-    font-family: inherit;
-    font-size: 1rem;
-    padding: 10px;
-  }
-  
-  @media (max-width: 30px) {
-    .label-email {
-      margin-top: 20px;
-    }
-  }
-  
-  .label-message {
-    margin-top: 20px;
-  }
-  
-  .button {
-    appearance: none;
-    color: white;
-    background-color: #001745;
-    border: none;
-    font-size: .9375rem;
-    margin-top: 20px;
-    padding: 10px;
-    justify-items: center;
-  }
+/*# sourceMappingURL=style.css.map */

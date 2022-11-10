@@ -1,0 +1,69 @@
+@import "footer", "form", "gridproducts";
+
+
+.formulario {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+}
+.formImg {
+    width: 60px;
+    height: 60px;
+}
+
+//NOSOTROSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+.mainNosotros {
+    background-color: #c8dbf4;
+
+    div {
+        justify-content: center;
+    }
+}
+
+//PRODUCTOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+.mainProduct {
+    justify-items: center;
+    background-color: #e6edf7;
+}
+.textproduct {
+    grid-area: textproduct;
+}
+.orderby {
+    grid-area: orderby;
+    display: flex;
+    background-color: rgba(248, 59, 59, 0.8);
+    align-items: center;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+
+    h3 {
+        color: white;
+        padding: 0px 5px 5px 0px;
+        margin-right: 10px;
+    }
+
+    h4 {
+        color: white;
+        margin-left: 5px;
+    }
+}
+
+.card {
+    margin-top: 10px;
+}
+.card-body {
+    width: auto;
+    height: auto;
+}
+.product {
+    &:hover {
+        background-color: #c8dbf4;
+    }
+}
+
+//CONTACTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+.mainContacto {
+    background-color: #dfdfdf;
+}
+
+

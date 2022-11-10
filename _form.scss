@@ -1,0 +1,73 @@
+.form {
+    display: grid;
+    grid-row-gap: 5px;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    padding: 25px;
+}
+
+@media (min-width: 400px) {
+    .form {
+        grid-column-gap: 25px;
+        grid-template-areas: 
+        "label-name label-email"
+        "field-name field-email"
+        "label-msg  ."
+        "field-msg  field-msg"
+        "button     .";
+    }
+}
+
+.label-name {
+    grid-area: label-name;
+}
+.label-email {
+    grid-area: label-email;
+}
+.label-message {
+    grid-area: label-msg;
+}
+.field-name {
+    grid-area: field-name;
+    width: 100%;
+}
+.field-email {
+    grid-area: field-email;
+    width: 100%;
+}
+.field-message {
+    grid-area: field-msg;
+    width: 100%;
+}
+.button {
+    grid-area: button;
+}
+
+.field {
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+@media (max-width: 30px) {
+    .label-email {
+        margin-top: 20px;
+    }
+}
+
+.label-message {
+    margin-top: 20px;
+}
+
+.button {
+    appearance: none;
+    color: white;
+    background-color: #001745;
+    border: none;
+    font-size: 0.94rem;
+    margin-top: 20px;
+    padding: 10px;
+    justify-items: center;
+}
